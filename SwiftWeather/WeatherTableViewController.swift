@@ -130,30 +130,45 @@ class WeatherTableViewController: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let date = Calendar.current.date(byAdding: .day, value: section, to: Date())
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM dd, yyyy"
+        dateFormatter.dateFormat = "EEEE, MMMM dd, yyyy"
         
         return dateFormatter.string(from: date!)
+        
+        
+        
     }
+    
+
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         let weatherObject = forecastData[indexPath.section]
+        
         let weather2Object = forecastData2[indexPath.section]
-     //   let weather3Object = forecastData3[indexPath.section]
+        
         
 
 
 
-       
         
+  
+        
+        //
         
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy"
         dateFormatter.dateFormat = "MMMM dd, yyyy"
         let currentDateString: String = dateFormatter.string(from: date)
+        
+        
+        dateFormatter.dateFormat = "EEEE "
+        let currentDayString: String = dateFormatter.string(from: date)
+        
+        
         
      //   let dateFormatter = DateFormatter()
     //    dateFormatter.dateFormat = "EEEE,MMMM dd, yyyy"
