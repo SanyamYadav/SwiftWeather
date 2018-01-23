@@ -12,7 +12,7 @@
         <!--City Weather-->
         <scene sceneID="jqm-Ou-WdL">
             <objects>
-                <tableViewController id="huq-DI-BZM" customClass="WeatherTableViewController" customModule="SwiftWeather" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="huq-DI-BZM" customClass="WeatherTableViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="bw6-HL-jqO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,11 +47,6 @@
                                     <rect key="frame" x="188" y="104" width="135" height="117"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <searchBar contentMode="redraw" fixedFrame="YES" placeholder="New York" translatesAutoresizingMaskIntoConstraints="NO" id="rVl-TC-ND9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBY-sT-IQ7">
                                     <rect key="frame" x="23" y="56" width="278" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -67,18 +62,18 @@
                                 <rect key="frame" x="0.0" y="323" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4j5-4Q-WF8" id="D10-sM-5nn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qSV-D0-tV9">
-                                            <rect key="frame" x="15" y="32" width="34" height="21"/>
+                                            <rect key="frame" x="15" y="33" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cZB-de-ty9">
-                                            <rect key="frame" x="15" y="53" width="44" height="15"/>
+                                            <rect key="frame" x="15" y="53.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -103,7 +98,6 @@
                         <outlet property="LabelOne" destination="nBY-sT-IQ7" id="zMR-dh-BKq"/>
                         <outlet property="LabelThree" destination="HI9-jS-M4r" id="43I-i3-SwL"/>
                         <outlet property="LabelTwo" destination="pJ5-oA-53b" id="y1z-vI-oga"/>
-                        <outlet property="searchBar" destination="rVl-TC-ND9" id="w1q-tW-6T6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zN6-56-BhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
